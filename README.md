@@ -3,7 +3,6 @@
 <!-- BADGES -->
 <div align="center">
 
-[![size](https://img.shields.io/github/repo-size/zelvios/user_auth?color=9ece6a&labelColor=1A1B26&style=for-the-badge)](https://github.com/zelvios/user_auth)
 [![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fzelvios%2Fuser_auth&label=View&labelColor=%231a1b26&countColor=%23e0af68)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fzelvios%2Fuser_auth)
 [![license](https://img.shields.io/github/license/zelvios/user_auth?color=FCA2AA&labelColor=1A1B26&style=for-the-badge)](https://github.com/zelvios/user_auth/blob/main/LICENSE.md)
 
@@ -71,5 +70,5 @@ For details on available API endpoints, request and response, see the [API Refer
 ### Or, as an oneliner:
 
 ```sh
-git clone https://github.com/your-username/user_auth.git && cd user_auth && docker-compose up -d db && cargo run
+git clone https://github.com/zelvios/user_auth.git && cd user_auth && docker-compose up -d db && cargo run
 ```
