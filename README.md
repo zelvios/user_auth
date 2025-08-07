@@ -45,6 +45,15 @@ For details on available API endpoints, request and response, see the [API Refer
 
 ## 🔧  Setup Guide
 
+### ⚠️ Required
+
+Make sure you have the following installed:
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Diesel CLI](https://diesel.rs/guides/getting-started/) – install with:
+  ```sh
+  cargo install diesel_cli
+
 1. Clone the repository:
 
     ```sh
@@ -60,15 +69,19 @@ For details on available API endpoints, request and response, see the [API Refer
 3. Start the database with Docker Compose:
 
     ```
-    docker-compose up -d db
+    docker compose up -d db
     ```
-4. Run the application:
+4. Run the migrations:
     ```
-    cargo run
+    diesel migration run
+    ```
+5. start the API:
+    ```
+    docker compose up -d api
     ```
 
 ### Or, as an oneliner:
 
 ```sh
-git clone https://github.com/zelvios/user_auth.git && cd user_auth && docker-compose up -d db && cargo run
+git clone https://github.com/Zelvios/user_auth.git && cd user_auth && docker compose up -d db && diesel migration run && docker compose up -d api
 ```
